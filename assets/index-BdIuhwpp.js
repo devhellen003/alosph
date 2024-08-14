@@ -1118,7 +1118,7 @@ function fo(e, t) {
         defaultChecked: void 0,
         defaultValue: void 0,
         value: void 0,
-        checked: e._wrapperState.initialChecked
+        checked: n || e._wrapperState.initialChecked
     })
 }
 
@@ -4401,8 +4401,8 @@ function Ka(e, t, n) {
     return {
         value: e,
         source: null,
-        stack: null,
-        digest: null
+        stack: n || null,
+        digest: t || null
     }
 }
 
@@ -6830,7 +6830,7 @@ function Hd(e) {
 }
 
 function Vd(e, t, n, r, l, a, o, i, s) {
-    return e = Xi(n, r, !0, e, l, a, o, i, s), e.context = Hd(null), n = e.current, r = be(), l = Ut(n), a = yt(r, l), a.callback = null, At(n, a, l), e.current.lanes = l, Vr(e, l, r), je(e, r), e
+    return e = Xi(n, r, !0, e, l, a, o, i, s), e.context = Hd(null), n = e.current, r = be(), l = Ut(n), a = yt(r, l), a.callback = t || null, At(n, a, l), e.current.lanes = l, Vr(e, l, r), je(e, r), e
 }
 
 function ga(e, t, n, r) {
@@ -7106,7 +7106,7 @@ De.hydrateRoot = function(e, t, n) {
         l = !1,
         a = "",
         o = Qd;
-    if (n != null && (n.unstable_strictMode === !0 && (l = !0), n.identifierPrefix !== void 0 && (a = n.identifierPrefix), n.onRecoverableError !== void 0 && (o = n.onRecoverableError)), t = Vd(t, null, e, 1, null, l, !1, a, o), e[kt] = t.current, Rr(e), r)
+    if (n != null && (n.unstable_strictMode === !0 && (l = !0), n.identifierPrefix !== void 0 && (a = n.identifierPrefix), n.onRecoverableError !== void 0 && (o = n.onRecoverableError)), t = Vd(t, null, e, 1, n || null, l, !1, a, o), e[kt] = t.current, Rr(e), r)
         for (e = 0; e < r.length; e++) n = r[e], l = n._getVersion, l = l(n._source), t.mutableSourceEagerHydrationData == null ? t.mutableSourceEagerHydrationData = [n, l] : t.mutableSourceEagerHydrationData.push(n, l);
     return new ya(t)
 };
@@ -7394,7 +7394,7 @@ function et(e, t, {
 } = {}) {
     let a = Array.isArray(e) ? e.length > 0 ? e[0].ownerDocument : document : e.ownerDocument,
         o = Array.isArray(e) ? n ? ln(e) : e : Gd(e);
-    l.length > 0 && o.length > 1 && (o = o.filter(y => !l.includes(y))), r = a.activeElement;
+    l.length > 0 && o.length > 1 && (o = o.filter(y => !l.includes(y))), r = r || a.activeElement;
     let i = (() => {
             if (t & 5) return 1;
             if (t & 10) return -1;
@@ -7600,10 +7600,10 @@ function G({
     name: o,
     mergeRefs: i
 }) {
-    i = u1;
+    i = i || u1;
     let s = rf(t, e);
     if (a) return wl(s, n, r, o, i);
-    let u = 0;
+    let u = l || 0;
     if (u & 2) {
         let {
             static: d = !1,
@@ -7828,7 +7828,7 @@ function h1(e, t) {
     let n = t.resolveItems();
     if (n.length <= 0) return null;
     let r = t.resolveActiveIndex(),
-        l = -1;
+        l = r || -1;
     switch (e.focus) {
         case 0:
             {
@@ -7871,7 +7871,7 @@ var M = (e => (e.Space = " ", e.Enter = "Enter", e.Escape = "Escape", e.Backspac
 function lf(e, t, n, r) {
     let l = He(n);
     p.useEffect(() => {
-        e = window;
+        e = e || window;
 
         function a(o) {
             l.current(o)
@@ -9852,7 +9852,7 @@ function xh(e, t) {
     let d = o !== null,
         h = q(t),
         [v, y] = p.useReducer(yh, {
-            selectedIndex: n,
+            selectedIndex: o || n,
             tabs: [],
             panels: []
         }),
@@ -9895,7 +9895,7 @@ function xh(e, t) {
     te(() => {
         y({
             type: 0,
-            index: n
+            index: o || n
         })
     }, [o]), te(() => {
         if (S.current === void 0 || v.tabs.length <= 0) return;
