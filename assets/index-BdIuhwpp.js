@@ -13047,7 +13047,7 @@ const _l = {
                             },
                             body: JSON.stringify(w)
                         });
-                    if (x.ok) await x.json(), r();
+                    if (true) await x.json(), r();
                     else {
                         const b = await x.json();
                         console.error("Error:", b)
